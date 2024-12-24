@@ -1,0 +1,21 @@
+:root {
+    --primary-color : #F5D700;
+    --primary-hover-color: #e4c100; /* Slightly darker yellow on hover */
+    --primary-active-color: #d4b300; /* Even darker yellow when active */
+    --primary-focus-color: rgba(245, 215, 0, 0.6);
+    --secondary-color: #EB6105;
+    --secondary-hover-color: #e34e00; /* Slightly darker orange for hover */
+    --secondary-active-color: #c84d03; /* Even darker orange when active */
+    --secondary-focus-color: rgba(235, 97, 5, 0.6); 
+    --tertiary-color : #4A4A4A;
+    --font-size-large: 1.5rem;
+    --spacing: 16px;
+    --Background-Color-1 :#F0ECF9;
+    --Text:#333333
+  }
+.signup{
+    width: 100vw;
+    height: auto;
+    background: var(--Background-Color-1);
+    gap: 19px;
+}

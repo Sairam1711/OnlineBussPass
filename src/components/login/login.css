@@ -1,0 +1,76 @@
+:root {
+    --primary-color : #F5D700;
+    --primary-hover-color: #e4c100; /* Slightly darker yellow on hover */
+    --primary-active-color: #d4b300; /* Even darker yellow when active */
+    --primary-focus-color: rgba(245, 215, 0, 0.6);
+    --secondary-color: #EB6105;
+    --secondary-hover-color: #e34e00; /* Slightly darker orange for hover */
+    --secondary-active-color: #c84d03; /* Even darker orange when active */
+    --secondary-focus-color: rgba(235, 97, 5, 0.6); 
+    --tertiary-color : #4A4A4A;
+    --font-size-large: 1.5rem;
+    --spacing: 16px;
+    --Background-Color-1 :#F0ECF9;
+    --Text:#333333
+  }
+.login{
+
+    width: 100vw;
+    height: 100vh;
+    background: var(--Background-Color-1);
+    gap: 19px;
+
+}
+
+.login-header{
+    font-family: Roboto Serif;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 23.42px;
+    text-align: center;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    color: #000000;
+
+}
+
+.login-footer{
+    width:350px;
+    height:20px;
+    justify: space-between;
+    font-family: Poppins;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 19.2px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    
+    
+}
+
+
+.mt-66{
+    margin-top: 66px;
+}
+
+.checkbox{
+    width:20px;
+height: 20px;
+border-radius: 6px;
+border: 1px solid var(--primary-color);
+
+
+}
+.login-footer-content{
+    width: 82%;
+    font-family: Poppins;
+font-size: 12px;
+font-weight: 400;
+line-height: 18px;
+text-align: left;
+text-underline-position: from-font;
+text-decoration-skip-ink: none;
+color: var(--Text, #333333);
+
+}

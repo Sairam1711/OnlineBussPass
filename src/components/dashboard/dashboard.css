@@ -1,0 +1,33 @@
+.icon-base{
+    width: 98.25px;
+height: 56px;
+padding: 7px 30px 7px 30px;
+gap: 10px;
+
+}
+.dashboard{
+width: 100vw;
+height: 100vh;
+}
+.dashboard_header{
+position: absolute;
+top: 0;
+width: 100vw;
+box-shadow: 0px 0px 0px 1.2px #00000040; 
+
+}
+
+@media (max-width: 768px) {
+
+    .icon-base{
+
+        padding: 0;
+    }
+.dashboard_header{
+    width: 100vw;
+    bottom: 0;
+    top: auto;
+ box-shadow: 0px 0px 10.2px 0px #00000040; 
+}
+}
+

@@ -1,0 +1,198 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+:root {
+  --primary-color : #F5D700;
+  --primary-hover-color: #e4c100; /* Slightly darker yellow on hover */
+  --primary-active-color: #d4b300; /* Even darker yellow when active */
+  --primary-focus-color: rgba(245, 215, 0, 0.6);
+  --secondary-color: #EB6105;
+  --secondary-hover-color: #e34e00; /* Slightly darker orange for hover */
+  --secondary-active-color: #c84d03; /* Even darker orange when active */
+  --secondary-focus-color: rgba(235, 97, 5, 0.6); 
+  --tertiary-color : #4A4A4A;
+  --font-size-large: 1.5rem;
+  --spacing: 16px;
+  --Background-Color-1 :#F0ECF9
+}
+.flex{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+} 
+
+.coloum{
+flex-direction: column;
+}
+.start{
+justify-content: start;
+}
+.flex.left{
+  align-items:flex-start;
+}
+.flex.sb{
+  justify-content: space-between;
+}
+.header{
+  font-family: Poppins;
+font-size: 20px;
+font-weight: 600;
+line-height: 30px;
+text-align: left;
+text-underline-position: from-font;
+text-decoration-skip-ink: none;
+color: #FFFFFF;
+
+}
+.blinking-text {
+  animation: blink 1s infinite; /* 1s duration, infinite repeat */
+}
+@keyframes blink {
+  0% {
+    opacity: 1; /* Fully visible */
+  }
+  50% {
+    opacity: 0; /* Invisible */
+  }
+  100% {
+    opacity: 1; /* Fully visible again */
+  }
+}
+
+.HomePage{
+  width: 100vw;
+  height: 100vh;
+  background: var(--Background-Color-1, #F0ECF9);
+gap: 12px;
+margin: auto;
+}
+.header2{
+  font-family: Poppins;
+font-size: 16px;
+font-weight: 600;
+line-height: 24px;
+text-align: left;
+text-underline-position: from-font;
+
+color: var(--primary-color);
+}
+
+
+.button{
+  width: 353px;
+height: 48px;
+gap: 10px;
+border-radius: 8px;
+cursor: pointer;
+border: none;
+
+}
+
+.button.primary-button{
+  background-color: var(--primary-color);
+  color: white;
+}
+.button.primary-button:hover {
+  background-color: var(--primary-hover-color);
+  border-color: var(--primary-hover-color);
+  transform: translateY(-2px); /* Lift the button */
+}
+
+/* Active state */
+.button.primary-button:active {
+  background-color: var(--primary-active-color);
+  border-color: var(--primary-active-color);
+  transform: translateY(2px); /* Button presses down */
+}
+
+/* Focus state */
+.button.primary-button:focus {
+  outline: none;
+ 
+}
+
+.button.secondary-button{
+background-color: var(--secondary-color);
+color: white;
+}
+.button.secondary-button:hover {
+background-color: var(--secondary-hover-color);
+border-color: var(--secondary-hover-color);
+transform: translateY(-2px); /* Lift the button */
+}
+
+.button.secondary-button:active {
+background-color: var(--secondary-active-color);
+border-color: var(--secondary-active-color);
+transform: translateY(2px); /* Button presses down */
+}
+
+.button.secondary-button:focus {
+outline: none;
+
+}
+.custom_input{
+  width: 351px;
+height: auto;
+gap: 8px;
+opacity: 0px;
+
+
+}
+
+.custom_input input {
+  width: 331px;
+height: 42px;
+gap: 10px;
+border-radius: 5px;
+padding-left: 16px;
+border: 1px solid #D0D5DD;
+font-family: Poppins;
+
+}
+.custom_input label{
+  font-family: Poppins;
+font-size: 14px;
+font-weight: 500;
+line-height: 22.4px;
+text-align: left;
+text-underline-position: from-font;
+text-decoration-skip-ink: none;
+color: #475467;
+
+}
