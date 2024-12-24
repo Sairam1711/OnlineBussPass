@@ -3,6 +3,7 @@ import "./signup.css";
 import logo_fill from "../../assest/Svg/Logo-fill.svg";
 import Input from "../UI-Utils/Input";
 function Signup() {
+  const navigate =useNavigate()
     return (
       <div className='signup flex coloum'>
    <div className="flex coloum">

@@ -3,9 +3,11 @@ import "./home.css";
 import logo from "../../assest/Svg/Logo.svg";
 import logo_fill from "../../assest/Svg/Logo-fill.svg";
 import image from "../../assest/Svg/Image.svg";
+import { useNavigate } from "react-router-dom";
+import { path } from "../../constant";
 function Home() {
   const [isVisible, setIsVisible] = useState(true);
-
+const navigate =useNavigate()
   useEffect(() => {
     // Set a timeout to hide the element after 5 seconds
     const timer = setTimeout(() => {
@@ -39,10 +41,14 @@ function Home() {
             Offering a user-friendly interface and flexible options for a stress-free travel experience. Simplify your journey choose EasyBusPass today.
             </span>
           </div>
-          <button className="button primary-button">
+          <button onClick={()=>{
+navigate(path.signup)
+          }} className="button primary-button">
           Signup Now
           </button>
-          <button className="button secondary-button">
+          <button  onClick={()=>{
+            navigate(path.login)
+          }}className="button secondary-button">
           Login Now
           </button>
         </div>

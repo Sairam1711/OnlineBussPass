@@ -2,7 +2,11 @@ import React from "react";
 import "./login.css";
 import logo_fill from "../../assest/Svg/Logo-fill.svg";
 import Input from "../UI-Utils/Input";
+import { useNavigate } from "react-router-dom";
+import { path } from "../../constant";
 function Login() {
+  const navigate =useNavigate()
+  
   return (
     <div className="login flex coloum start ">
       <div className="flex coloum">
@@ -20,7 +24,9 @@ function Login() {
         </span>
         <span>Forgot Password</span>
       </div>
-      <button className="button secondary-button">Login Now</button>
+      <button onClick={()=>{
+        navigate(path.dashbord)
+      }} className="button secondary-button">Login Now</button>
       <span className="login-footer-content">
         I don’t have an account? Signup Now.
       </span>
