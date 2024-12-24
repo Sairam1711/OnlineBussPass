@@ -6,7 +6,7 @@ import { useNavigate } from "react-router-dom";
 import { path } from "../../constant";
 function Login() {
   const navigate =useNavigate()
-  
+
   return (
     <div className="login flex coloum start ">
       <div className="flex coloum">
