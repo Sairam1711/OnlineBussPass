@@ -2,6 +2,7 @@ import React from 'react'
 import "./signup.css";
 import logo_fill from "../../assest/Svg/Logo-fill.svg";
 import Input from "../UI-Utils/Input";
+import { useNavigate } from 'react-router-dom';
 function Signup() {
   const navigate =useNavigate()
     return (
