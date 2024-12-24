@@ -10,7 +10,7 @@
     --tertiary-color : #4A4A4A;
     --font-size-large: 1.5rem;
     --spacing: 16px;
-    --Background-Color-1 :#F0ECF9
+    --Background-Color-1 :#F0ECF9;
   }
  .flex{
     display: flex;
@@ -77,12 +77,11 @@ color: var(--primary-color);
   }
 
   .image-home{
-    margin-top: 23px;
-    margin-bottom: 23px;
+  
   }
 .home-content{
 
-  padding: 21px;
+  padding: 5px;
 }
   .home-content h1{
  

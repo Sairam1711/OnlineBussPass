@@ -26,8 +26,11 @@ const navigate =useNavigate()
         </div>
       ) : (
         <div className="HomePage  flex coloum ">
+          <div className="flex coloum">
           <img className="" src={logo_fill}></img>
           <h1 className="header2 ">OnlineBussPass </h1>
+          </div>
+         
           <img className="image-home" src={image}>
           </img>
           <div className="home-content">
