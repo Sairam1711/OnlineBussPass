@@ -1,26 +1,38 @@
 import React from 'react'
 import './dashboard.css'
+
 import HomeSvg from "../../assest/Svg/HomeSvg";
 import ProfileSvg from '../../assest/Svg/ProfileSvg';
 import PassSvg from '../../assest/Svg/PassSvg';
 import SupportSvg from '../../assest/Svg/SupportSvg';
-const IconwithText=({Src})=>{
+
+import { Outlet, useNavigate } from 'react-router-dom';
+import { path } from '../../constant';
+const IconwithText=({Src,_onClick})=>{
 return(
-    <div className='icon-base flex coloum'>
+    <div onClick={_onClick} className='icon-base items-center justify-center '>
 <Src></Src>
     </div>
 )
 }
 function Dashpoard() {
+    const navigate=useNavigate()
     return (
-    <div className='dashboard flex coloum'>
-<header className='dashboard_header flex  '>
-    <IconwithText Src={()=><HomeSvg></HomeSvg>}></IconwithText>
-    <IconwithText Src={()=><PassSvg></PassSvg>}></IconwithText>
+    <div className='dashboard flex justify-center items-baseline' >
+<header className='dashboard_header flex justify-center '>
+    <IconwithText _onClick={()=>{
+navigate(path.lobby)
+    }} Src={()=><HomeSvg></HomeSvg>}></IconwithText>
+    <IconwithText _onClick={()=>{
+navigate(path.myPass)
+    }} Src={()=><PassSvg></PassSvg>}></IconwithText>
     <IconwithText Src={()=><SupportSvg></SupportSvg>}></IconwithText>
     <IconwithText Src={()=><ProfileSvg></ProfileSvg>}></IconwithText>
 {/* <HomeSvg></HomeSvg> */}
 </header>
+   <Outlet>
+
+   </Outlet>
 
     </div>
     )

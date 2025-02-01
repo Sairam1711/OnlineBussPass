@@ -1,3 +1,4 @@
+
 .App {
   text-align: center;
 }
@@ -50,11 +51,6 @@
   --spacing: 16px;
   --Background-Color-1 :#F0ECF9
 }
-.flex{
-  display: flex;
-  align-items: center;
-  justify-content: center;
-} 
 
 .coloum{
 flex-direction: column;
