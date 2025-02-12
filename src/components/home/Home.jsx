@@ -20,14 +20,14 @@ const navigate =useNavigate()
   return (
     <>
       {isVisible ? (
-        <div className="home flex coloum ">
-          <img className="blinking-text" src={logo}></img>
+        <div className="home flex flex-col items-center justify-center ">
+          <img className="blinking-text w-10" src={logo}></img>
           <h1 className="header ">OnlineBussPass </h1>
         </div>
       ) : (
-        <div className="HomePage  flex coloum ">
-          <div className="flex coloum">
-          <img className="" src={logo_fill}></img>
+        <div className="HomePage flex flex-col items-center justify-center ">
+          <div className="flex flex-col items-center justify-center">
+          <img className="w-10" src={logo_fill}></img>
           <h1 className="header2 ">OnlineBussPass </h1>
           </div>
          
@@ -46,12 +46,12 @@ const navigate =useNavigate()
           </div>
           <button onClick={()=>{
 navigate(path.signup)
-          }} className="button primary-button">
+          }} className="button primary-button lg:w-48">
           Signup Now
           </button>
           <button  onClick={()=>{
             navigate(path.login)
-          }}className="button secondary-button">
+          }}className="button secondary-button ">
           Login Now
           </button>
         </div>

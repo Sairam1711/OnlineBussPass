@@ -113,7 +113,6 @@ text-decoration-skip-ink: none;
 color: var(--tertiary-color);
   }
   .button{
-    width: 353px;
 height: 48px;
 gap: 10px;
 border-radius: 8px;

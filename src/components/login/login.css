@@ -37,7 +37,7 @@
 .login-footer{
     width:350px;
     height:20px;
-    justify: space-between;
+    justify-content: space-between;
     font-family: Poppins;
     font-size: 12px;
     font-weight: 500;

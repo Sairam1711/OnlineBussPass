@@ -8,9 +8,10 @@ function Login() {
   const navigate =useNavigate()
 
   return (
-    <div className="login flex coloum start ">
-      <div className="flex coloum">
-        <img className="mt-66" src={logo_fill}></img>
+    <div className="login flex flex-col items-center justify-start ">
+      <div className="flex flex-col items-center justify-between w-[90vw] h-[80vh] ">
+      <div className="flex flex-col items-center justify-start ">
+        <img className="mt-6 w-10" src={logo_fill}></img>
         <h1 className="header2">OnlineBussPass </h1>
       </div>
 
@@ -30,6 +31,7 @@ function Login() {
       <span className="login-footer-content">
         I don’t have an account? Signup Now.
       </span>
+      </div>
     </div>
   );
 }
