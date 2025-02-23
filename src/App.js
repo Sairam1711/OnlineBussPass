@@ -18,8 +18,30 @@ import HelpSupport from "./components/helpSupport/HelpSupport";
 import MyAccount from "./components/myAccount/MyAccount";
 import BuyBusPass from "./components/buyscreen/BuyBusPass";
 import MTCBusPass from "./components/viewPass/MTCBusPass";
+import authService from "./utils/services/authService";
+import { useEffect, useState } from "react";
 
 function App() {
+  const [user, setusers] = useState({
+    image:
+      "https://w7.pngwing.com/pngs/178/595/png-transparent-user-profile-computer-icons-login-user-avatars-thumbnail.png",
+    name: "Loading...",
+    phone: "Loading...",
+  });
+  useEffect(() => {
+    const geti = async () => {
+      const identities = await authService.getUserIdentities();
+      const { identity_data } = identities[0];
+      setusers({
+        image:
+          "https://w7.pngwing.com/pngs/178/595/png-transparent-user-profile-computer-icons-login-user-avatars-thumbnail.png",
+        name: identity_data.fullName,
+        phone: "7894721848",
+      });
+    };
+    geti();
+  }, []);
+
   return (
     <Routes>
       <Route path="/" element={<Home></Home>}></Route>
@@ -48,11 +70,9 @@ function App() {
             />
           }
         ></Route>
-         <Route
+        <Route
           path={path.mtcPass}
-          element={
-            <MTCBusPass user={user} passDetails={passDetails} />
-          }
+          element={<MTCBusPass user={user} passDetails={passDetails} />}
         ></Route>
       </Route>
     </Routes>

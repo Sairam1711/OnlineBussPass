@@ -5,8 +5,9 @@ import NotificationsRoundedIcon from "@mui/icons-material/NotificationsRounded";
 import { green } from "@mui/material/colors";
 import { useNavigate } from "react-router-dom";
 import { path } from "../../../../constant";
+import Logout from "../../../Logout";
 const PassCard=({title,description,buttonText,_onclick}) =>{
-  return( <div className="max-w-sm  bg-white shadow-lg rounded-lg p-6 border">
+  return( <div className="w-[90%]  bg-white shadow-lg rounded-lg p-6 border">
     <h2 className="text-lg font-semibold mb-2">{title}</h2>
     <p className="text-gray-600 text-sm mb-4">{description}</p>
     <button onClick={_onclick} className="w-full bg-blue-500 text-white py-2 rounded-lg hover:bg-blue-600 transition">
@@ -31,14 +32,16 @@ function Lobby({user}) {
         <NotificationsRoundedIcon />
       </Avatar>
     </div>
-    <div className="flex flex-col gap-5 w-full">
+    <div className="flex flex-col gap-5 w-full justify-center items-center ">
    <PassCard title={"My pass"} description={"this Month pass"} buttonText={"View"} _onclick={()=>{
 navigate(path.dashbord+"/"+path.mtcPass)
    }}></PassCard>
       <PassCard title={"Need buy pass"} description={"click below button"} buttonText={"BUY"} _onclick={()=>{
            navigate(path.dashbord+"/"+path.buypass)
            }}></PassCard>
+           <Logout></Logout>
     </div>
+   
     </div>
     
   );

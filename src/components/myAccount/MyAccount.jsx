@@ -1,4 +1,5 @@
 import React from "react";
+import Logout from "../Logout";
 
 const MyAccount = ({ user, menuItems }) => {
   return (
@@ -24,7 +25,12 @@ const MyAccount = ({ user, menuItems }) => {
             <span className="text-gray-400">➡️</span>
           </div>
         ))}
+       
       </div>
+      <div className="flex w=full justify-center items-center mt-5">
+      <Logout></Logout>
+      </div>
+      
     </div>
   );
 };

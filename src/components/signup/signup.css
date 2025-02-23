@@ -19,3 +19,9 @@
     background: var(--Background-Color-1);
     gap: 19px;
 }
+.error{
+  color: red;
+  font-size: small;
+  text-align: left;
+  width: 90%;
+}
